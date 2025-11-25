@@ -24,6 +24,7 @@ pipeline {
         stage('Git: Code Checkout') {
             steps {
                 script{
+                    echo "this is cloning of code"
                     code_checkout("https://github.com/DevMadhup/Wanderlust-Mega-Project.git","main")
                 }
             }
